@@ -1,8 +1,8 @@
 import React,{Component, useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import "../main.scss";
-import "../js/slider_manager";
-import "../js/main";
+import "./slider_manager";
+import "./main";
 import "../normalize.css";
 
 const Header = () => {
@@ -213,7 +213,7 @@ const ContactForm = () => {
         </form>
     )
 };
-function App() {
+function ContactMain() {
     return (
         <>
             <div className="container">
@@ -228,12 +228,14 @@ function App() {
     )
 }
 ReactDOM.render(
-    <App />,
+    <ContactMain />,
     document.getElementById("app")
 );
 export {
-    App,
-    ContactForm
+    ContactMain,
+    ContactForm,
+    Footer,
+    Header
 };
 
 
