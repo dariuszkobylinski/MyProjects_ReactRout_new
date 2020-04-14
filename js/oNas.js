@@ -220,7 +220,7 @@ const ContactForm = () => {
         </form>
     )
 };
-function App() {
+function AboutUs() {
     return (
         <>
             <div className="container">
@@ -236,10 +236,10 @@ function App() {
     )
 }
 ReactDOM.render(
-    <App />,
+    <AboutUs />,
     document.getElementById("app")
 );
 export {
-    App,
+    AboutUs,
     ContactForm
 };

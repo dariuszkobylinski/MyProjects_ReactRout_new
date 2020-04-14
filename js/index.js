@@ -57,13 +57,13 @@ const Header = () => {
                     </li>
                     <li className="classLink">
                         <a href="/dist/index_main.html" className="classLinkHref" id="keyPageWord"
-                           target="_parent">Oferta</a>
+                           target="_parent" style={{color:"darkorange"}}>Oferta</a>
                     </li>
                     <li className="classLink">
                         <a href="../cennik.html" className="classLinkHref" target="_parent">Cennik</a>
                     </li>
                     <li className="classLink">
-                        <a href="/dist/kontakt.html" className="classLinkHref" target="_parent" style={{color:"darkorange"}}>Kontakt</a>
+                        <a href="/dist/kontakt.html" className="classLinkHref" target="_parent">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -291,7 +291,7 @@ const ContactForm = () => {
         </form>
     )
 };
-function App() {
+function MainPage() {
     return (
         <>
             <div className="container">
@@ -307,10 +307,10 @@ function App() {
     )
 }
 ReactDOM.render(
-    <App />,
+    <MainPage />,
     document.getElementById("app")
 );
 export {
-    App,
+    MainPage,
     ContactForm
 };
